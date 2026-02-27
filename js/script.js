@@ -26,13 +26,13 @@ document.addEventListener('DOMContentLoaded', () => {
         {
             title: 'LinkedIn',
             description: 'Connettiamoci professionalmente',
-            url: '#', // TODO: Add real URL later
+            url: 'https://www.linkedin.com/in/mattia-scarpa-a20a6b277/', // Real URL
             iconClass: 'fa-brands fa-linkedin',
         },
         {
             title: 'HackerRank',
             description: 'Guarda le mie sfide di coding e certificazioni',
-            url: '#', // TODO: Add real URL later
+            url: 'https://www.hackerrank.com/profile/h892831', // Real URL
             iconClass: 'fa-brands fa-hackerrank',
         }
     ];
@@ -41,22 +41,27 @@ document.addEventListener('DOMContentLoaded', () => {
     const socialsData = [
         {
             label: 'Instagram',
-            url: '#', // TODO: Add real URL later
+            url: 'https://www.instagram.com/10.tmx.01/', // Real URL
             iconClass: 'fa-brands fa-instagram',
         },
         {
-            label: 'Email',
-            url: 'mailto:info@example.com', // TODO: Add real Email later
-            iconClass: 'fa-solid fa-envelope',
+            label: 'WhatsApp',
+            url: 'https://wa.me/393400080030', // Real URL
+            iconClass: 'fa-brands fa-whatsapp',
+        },
+        {
+            label: 'Telefono',
+            url: 'tel:+393400080030', // Real URL
+            iconClass: 'fa-solid fa-phone',
         },
         {
             label: 'Telegram',
-            url: '#', // TODO: Add real URL later
+            url: 'https://t.me/+393400080030', // Real URL
             iconClass: 'fa-brands fa-telegram',
         },
         {
             label: 'Facebook',
-            url: '#', // TODO: Add real URL later
+            url: '#', // TODO: Add real facebook URL later
             iconClass: 'fa-brands fa-facebook',
         }
     ];
