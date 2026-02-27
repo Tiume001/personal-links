@@ -8,19 +8,19 @@ document.addEventListener('DOMContentLoaded', () => {
         {
             title: 'Portfolio Principale',
             description: 'Scopri i miei progetti software e le mie competenze',
-            url: '#', // TODO: Add real URL later
+            url: 'https://mattiascarpa.it', // Real URL
             iconClass: 'fa-solid fa-globe',
         },
         {
             title: 'Immobili in Affitto',
             description: 'Esplora le mie proprietà immobiliari per le tue vacanze',
-            url: '#', // TODO: Add real URL later
+            url: 'https://immobili.mattiascarpa.it', // Real URL
             iconClass: 'fa-solid fa-house',
         },
         {
             title: 'GitHub',
             description: 'Esplora il codice sorgente dei miei progetti open-source',
-            url: '#', // TODO: Add real URL later
+            url: 'https://github.com/Tiume001', // Real URL
             iconClass: 'fa-brands fa-github',
         },
         {
