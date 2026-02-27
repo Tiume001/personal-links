@@ -117,7 +117,15 @@ document.addEventListener('DOMContentLoaded', () => {
     // Function to update the meta theme color
     function updateMetaThemeColor(isLight) {
         if (metaThemeColor) {
-            metaThemeColor.setAttribute('content', isLight ? '#EDE5D9' : '#0a0a0c');
+            // Calcolo esatto dei colori che appaiono in cima (viola scuro e marrone)
+            // L'aggiornamento simultaneo con la CSS transition a volte blocca Safari su iOS.
+            const newColor = isLight ? '#CDB59D' : '#2E2F68';
+            metaThemeColor.setAttribute('content', newColor);
+
+            // Forza l'aggiornamento a transizione finita per eludere il bug
+            setTimeout(() => {
+                metaThemeColor.setAttribute('content', newColor);
+            }, 450);
         }
     }
 
