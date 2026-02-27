@@ -112,6 +112,14 @@ document.addEventListener('DOMContentLoaded', () => {
     // -----------------------------------------
     const themeToggleBtn = document.getElementById('themeToggle');
     const rootElement = document.documentElement;
+    const metaThemeColor = document.getElementById('meta-theme-color');
+
+    // Function to update the meta theme color
+    function updateMetaThemeColor(isLight) {
+        if (metaThemeColor) {
+            metaThemeColor.setAttribute('content', isLight ? '#EDE5D9' : '#0a0a0c');
+        }
+    }
 
     // Check for saved theme preference or use system preference
     const savedTheme = localStorage.getItem('theme');
@@ -119,14 +127,18 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (savedTheme === 'light' || (!savedTheme && prefersLight)) {
         rootElement.classList.add('light-mode');
+        updateMetaThemeColor(true);
+    } else {
+        updateMetaThemeColor(false);
     }
 
     // Toggle theme on click
     themeToggleBtn.addEventListener('click', () => {
-        rootElement.classList.toggle('light-mode');
+        const isLightMode = rootElement.classList.toggle('light-mode');
+        updateMetaThemeColor(isLightMode);
 
         // Save preference
-        if (rootElement.classList.contains('light-mode')) {
+        if (isLightMode) {
             localStorage.setItem('theme', 'light');
         } else {
             localStorage.setItem('theme', 'dark');
