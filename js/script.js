@@ -28,6 +28,12 @@ document.addEventListener('DOMContentLoaded', () => {
             description: 'Connettiamoci professionalmente',
             url: '#', // TODO: Add real URL later
             iconClass: 'fa-brands fa-linkedin',
+        },
+        {
+            title: 'HackerRank',
+            description: 'Guarda le mie sfide di coding e certificazioni',
+            url: '#', // TODO: Add real URL later
+            iconClass: 'fa-brands fa-hackerrank',
         }
     ];
 
@@ -42,6 +48,16 @@ document.addEventListener('DOMContentLoaded', () => {
             label: 'Email',
             url: 'mailto:info@example.com', // TODO: Add real Email later
             iconClass: 'fa-solid fa-envelope',
+        },
+        {
+            label: 'Telegram',
+            url: '#', // TODO: Add real URL later
+            iconClass: 'fa-brands fa-telegram',
+        },
+        {
+            label: 'Facebook',
+            url: '#', // TODO: Add real URL later
+            iconClass: 'fa-brands fa-facebook',
         }
     ];
 
