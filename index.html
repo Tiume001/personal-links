@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mattia Scarpa | Links</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600&display=swap"
+        rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- Theme Toggle -->
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle Dark/Light Mode">
+        <i class="fa-solid fa-moon dark-icon"></i>
+        <i class="fa-solid fa-sun light-icon"></i>
+    </button>
+
+    <div class="app-container">
+        <!-- Profile Section -->
+        <header class="profile-section">
+            <div class="avatar-container">
+                <img src="assets/avatar.png" alt="Mattia Scarpa" class="avatar-img" id="profile-img">
+            </div>
+            <h1 class="profile-name">Mattia Scarpa</h1>
+            <p class="profile-bio">Software Engineer & Real Estate Investor</p>
+        </header>
+
+        <!-- Links Section (Dynamically rendered by JS) -->
+        <main class="links-section" id="links-container">
+            <!-- Link cards will be injected here by script.js -->
+        </main>
+
+        <!-- Social Footer Options -->
+        <footer class="social-footer">
+            <!-- Social links (Dynamically rendered by JS) -->
+            <div class="social-links" id="socials-container">
+                <!-- Social icons will be injected here by script.js -->
+            </div>
+
+            <p class="copyright">&copy; 2026 Mattia Scarpa. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <!-- Background decorative elements -->
+    <div class="decorations">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+    </div>
+
+    <!-- JS -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>
