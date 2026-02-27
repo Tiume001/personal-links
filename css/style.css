@@ -312,7 +312,8 @@ a {
     width: 400px;
     height: 400px;
     background-color: var(--accent-primary);
-    top: -100px;
+    top: 50px;
+    /* Spostato giù per non interferire con la status bar mobile */
     right: -100px;
     animation: float 15s infinite ease-in-out;
 }
